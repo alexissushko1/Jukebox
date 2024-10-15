@@ -2,4 +2,8 @@
 
 ### GET all users
 
-GET {{host}}/users
+GET {{host}}/
+
+### Get specific user
+
+GET {{host}}/2
