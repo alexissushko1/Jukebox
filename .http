@@ -2,8 +2,24 @@
 
 ### GET all users
 
-GET {{host}}/
+GET {{host}}/users
 
 ### Get specific user
 
-GET {{host}}/2
+GET {{host}}/users/1
+
+### GET all playlists
+
+GET {{host}}/playlists
+
+### Post a playlist
+
+POST {{host}}/playlists
+Content-Type: application/json
+
+{
+  "name": "Playlist",
+  "description": "Playlist description",
+  "ownerId": 4,
+  "trackIds": [3,4,5]
+}

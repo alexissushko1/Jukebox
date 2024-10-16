@@ -3,7 +3,6 @@ const router = express.Router();
 const prisma = require("../prisma/client");
 
 router.get("/", async (req, res, next) => {
-  console.log("reached /users");
   try {
     const users = await prisma.user.findMany();
     res.json(users);
